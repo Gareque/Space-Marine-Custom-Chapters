@@ -1,23 +1,6 @@
-Timeline
+# Timeline
 * Hour 0: Planning
 Gather content and design ideas, create wireframes and mockups. Plan out how the application will work, which routes might be necessary and which pages need to be made.
-
-# Content ideas
-The project will be based off the idea off Warhammer 40k.  A blog for people to upload their own custom space marine chapters, with different links for each of the 
-
-# Faction focus:
-Loyalist Space Marine Chapters
-
-# Routes:
-Routes for Home and one for each of the founding chapters.  It will detail some basic background about each of the legions and some example successor chapters.
-
-# Design:
-The user will post a chapter name and colour scheme, along with some basic background about the chapter.
-
-These will be stored under /custom-chapters
-
-# Other Ideas:
-- A random generator for chapters that will automatically input a chapter name and colour scheme.
 
 * Hour 1:  Setup
 Set up the project repository, initialize the Node.js application, and install necessary dependencies (Express.js, EJS).
@@ -35,3 +18,20 @@ Test the application to ensure that post creation and viewing are working correc
 Style the application. This includes creating a CSS file, linking it to your EJS templates, and writing CSS or using Bootstrap/Flexbox/Grid to style the application.
 Test the application on different devices and browsers to ensure the styling works correctly.
 Fix any bugs or issues that came up during testing.
+
+# Content ideas
+The project will be based off the idea off Warhammer 40k.  A blog for people to upload their own custom space marine chapters, with different links for each of the 
+
+# Faction focus:
+Loyalist Space Marine Chapters
+
+# Routes:
+Routes for Home and one for each of the founding chapters.  It will detail some basic background about each of the legions and some example successor chapters.
+
+# Design:
+The user will post a chapter name and colour scheme, along with some basic background about the chapter.
+
+These will be stored under /custom-chapters
+
+# Other Ideas:
+- A random generator for chapters that will automatically input a chapter name and colour scheme.
