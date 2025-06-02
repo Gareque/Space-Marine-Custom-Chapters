@@ -1,9 +1,9 @@
 <h1>Create your chapter now!</h1>
 
 
-<form>
-  <input name="name" type="text" class="feedback-input" placeholder="Chapter Name" />   <br>
-  <input name="email" type="text" class="feedback-input" placeholder="Colours" /> <br>
-  <textarea name="text" class="feedback-input" placeholder="Description"></textarea> <br> <br>
+<form action="/submit" method="POST">
+  <input name="chapterName" type="text" class="feedback-input" placeholder="Chapter Name" />   <br>
+  <input name="chapterColour" type="text" class="feedback-input" placeholder="Colours" /> <br>
+  <textarea name="chapterDescription" class="feedback-input" placeholder="Description"></textarea> <br> <br>
   <input type="submit" value="SUBMIT" />
 </form>
