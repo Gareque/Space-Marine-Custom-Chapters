@@ -10,23 +10,24 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-    res.render("index.ejs");
+    res.render("index.ejs", { submissions });
 });
 
 app.get("/new-chapter", (req, res) => {
-    res.render("index2.ejs");
+    res.render("create-chapter.ejs");
 });
 
 app.post("/submit", (req, res) => {
     const newChapter = {
         chapterName: req.body.chapterName,
         chapterColour: req.body.chapterColour,
+        foundingChapter: req.body.foundingChapter,
         chapterDescription: req.body.chapterDescription
     };
 
     submissions.push(newChapter);
     console.log(newChapter);
-    res.send('Form submitted successfully');
+    res.redirect('/');
 });
 
 app.get("/custom", (req, res) => {

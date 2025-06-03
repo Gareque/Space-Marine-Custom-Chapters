@@ -8,11 +8,29 @@
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <h1>Codex Astartes Successor Chapters</h1>
+
+    <p>Please upload your Space Marine chapter details, so that the Adeptus Administratum's records may be updated swiftly and efficiently</p>
 
     <form action="/new-chapter" method="GET">
         <input type="submit" value="Generate Chapter">
     </form>
-    
+
+<h1>Submitted Chapters</h1>
+    <% if (submissions.length > 0) { %>
+        <ul>
+            <% submissions.forEach((entry, index) => { %>
+                <li>
+                    <strong>Chapter <%= index + 1 %>: <%= entry.chapterName %></strong><br>
+                    Colour: <%= entry.chapterColour %> <br>
+                    Founding Chapter: <%= entry.foundingChapter %> <br>
+                    Description: <%= entry.chapterDescription %> <br><br>
+                </li>
+            <% }); %>
+        </ul>
+    <% } else  { %>
+        <p>No chapters have been submitted yet.</p>
+    <% } %>
+
 </body>
 </html>
