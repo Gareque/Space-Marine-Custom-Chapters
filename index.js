@@ -79,7 +79,7 @@ app.post("/edit/:id", (req, res) => {
 app.post("/delete/:id", (req, res) => {
   const id = parseInt(req.params.id);
   if (!isNaN(id) && submissions[id]) {
-    submissions.splice(id, 1); // Remove the chapter at that index
+    submissions.splice(id, 1);
   }
   res.redirect("/");
 });
