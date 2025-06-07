@@ -1,3 +1,5 @@
+<%- include("partials/header.ejs") %>
+
 <h1>Edit your chapter now!</h1>
 <form action="/edit/<%= id %>" method="POST">
   <input name="chapterName" type="text" class="feedback-input" value="<%= chapter.chapterName %>"/> <br>
@@ -6,3 +8,5 @@
   <textarea name="chapterDescription" class="feedback-input"><%= chapter.chapterDescription %></textarea> <br><br>
   <input type="submit" value="Save Changes" />
 </form>
+
+<%- include("partials/footer.ejs") %>

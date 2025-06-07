@@ -1,3 +1,5 @@
+<%- include("partials/header.ejs") %>
+
 <h1>Create your chapter now!</h1>
 
 <form action="/submit" method="POST">
@@ -7,3 +9,5 @@
   <textarea name="chapterDescription" class="feedback-input" placeholder="Description"></textarea> <br> <br>
   <input type="submit" value="Create">
 </form>
+
+<%- include("partials/footer.ejs") %>
