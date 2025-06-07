@@ -2,9 +2,9 @@
 
 <h1>Edit your chapter now!</h1>
 <form action="/edit/<%= id %>" method="POST">
-  <input name="chapterName" type="text" class="feedback-input" value="<%= chapter.chapterName %>"/> <br>
-  <input name="chapterColour" type="text" class="feedback-input" value="<%= chapter.chapterColour %>"/> <br>
-  <input name="foundingChapter" type="text" class="feedback-input" value="<%= chapter.foundingChapter %>"> <br><br>
+  <input name="chapterName" type="text" class="feedback-input, button" value="<%= chapter.chapterName %>"/> <br>
+  <input name="chapterColour" type="text" class="feedback-input, button" value="<%= chapter.chapterColour %>"/> <br>
+  <input name="foundingChapter" type="text" class="feedback-input, button" value="<%= chapter.foundingChapter %>"> <br><br>
   <textarea name="chapterDescription" class="feedback-input"><%= chapter.chapterDescription %></textarea> <br><br>
   <input type="submit" value="Save Changes" />
 </form>
