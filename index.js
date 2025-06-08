@@ -6,22 +6,22 @@ const port = 3000;
 
 const submissions = [
     {
-        chapterName: "Space Wolves",
-        chapterColour: "Grey-Blue",
-        foundingChapter: "N/A",
-        chapterDescription: "Angry Space Vikings"
+        chapterName: "Crimson Fists",
+        chapterColour: "Dark blue with a red left fist",
+        foundingChapter: "Imperial Fists",
+        chapterDescription: "The Crimson Fists are known for their stoic resilience and tactical precision. "
     },
     {
-        chapterName: "Blood Angels",
-        chapterColour: "Blood Red",
-        foundingChapter: "N/A",
-        chapterDescription: "Melancholic, depressed space vampires"
+        chapterName: "Angels of Absolution",
+        chapterColour: "Bone-white armor with dark green and black accents",
+        foundingChapter: "Dark Angels",
+        chapterDescription: "A highly secretive successor of the Dark Angels, sharing in their ominous quest to hunt down the Fallen."
     },
     {
-        chapterName: "Dark Angels",
-        chapterColour: "Green, Beige or Black (Depending on the section)",
-        foundingChapter: "N/A",
-        chapterDescription: "Space knights, based off a mix of Arthurian legend and Biblical demons"
+        chapterName: "Novamarines",
+        chapterColour: "Blue and white quartered armor with gold trim",
+        foundingChapter: "Ultramarines",
+        chapterDescription: "Proud defenders of the Codex Astartes, known for their discipline and loyalty."
     }
 ];
 

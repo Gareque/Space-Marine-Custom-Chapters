@@ -14,7 +14,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     let currentForm = null;
 
-    document.querySelectorAll('.deleteButton').forEach(button => {
+    document.querySelectorAll('.btn-danger').forEach(button => {
       button.addEventListener('click', (e) => {
         currentForm = e.target.closest('form');
         document.getElementById('modalOverlay').style.display = 'block';

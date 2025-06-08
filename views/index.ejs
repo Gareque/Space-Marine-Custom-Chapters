@@ -8,31 +8,34 @@
         <input type="submit" value="Generate Chapter">
     </form>
 
-<h1>Submitted Chapters</h1>
-    <% if (submissions.length > 0) { %>
-        <ul>
-            <% submissions.forEach((entry, index) => { %>
-                <li>
-                    <strong>Chapter <%= index + 1 %>: <%= entry.chapterName %></strong><br>
-                    Colour: <%= entry.chapterColour %> <br>
-                    Founding Chapter: <%= entry.foundingChapter %> <br>
-                    Description: <%= entry.chapterDescription %> <br>
+<div class="chapter-submissions">
+  <% if (submissions.length > 0) { %>
+    <div class="chapter-grid">
+      <% submissions.forEach((entry, index) => { %>
+        <div class="chapter-box">
+          <strong>Chapter <%= index + 1 %>: <%= entry.chapterName %></strong><br>
+          Colour: <%= entry.chapterColour %> <br>
+          Founding Chapter: <%= entry.foundingChapter %> <br>
+          Description: <%= entry.chapterDescription %> <br>
 
-                    <!-- Edit Button -->
-                    <form action="/edit/<%= index %>" method="GET" style="display: inline;">
-                        <button type="submit" class="button">Edit</button>
-                    </form>
+          <div class="button-row">
+            <!-- Edit Button -->
+            <form action="/edit/<%= index %>" method="GET" style="display: inline;">
+              <button type="submit" class="button btn btn-warning">Edit</button>
+            </form>
 
-                    <!-- Delete Button -->
-                    <form class="deleteForm" data-id="<%= index %>" style="display: inline;">
-                        <button type="button" class="deleteButton button" style="background-color: #ff4d00;">Delete</button> <br><br>
-                    </form>
-                </li>
-            <% }); %>
-        </ul>
-    <% } else  { %>
-        <p>No chapters have been submitted yet.</p>
-    <% } %>
+            <!-- Delete Button -->
+            <form class="deleteForm" data-id="<%= index %>" style="display: inline;">
+              <button type="button" class="button btn btn-danger" style="background-color: #ff4d00;">Delete</button>
+            </form>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  <% } else { %>
+    <p>No chapters have been submitted yet.</p>
+  <% } %>
+</div>
 
 <!-- Modal Overlay -->
 <div id="modalOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;

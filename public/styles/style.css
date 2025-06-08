@@ -6,3 +6,80 @@
   height: 30px;
   width: auto; /* maintains aspect ratio */
 }
+
+body {
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.chapter-submissions {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
+    border: 2px solid black;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.chapter-submissions ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.chapter-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.chapter-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 300px;
+  min-height: 300px; /* Force all boxes to same height */
+  background-color: #e9e4e4;
+  box-sizing: border-box;
+}
+
+.chapter-box strong,
+.chapter-box br,
+.chapter-box p {
+  margin-bottom: 0.5rem;
+}
+
+.button-row {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.chapter-entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 300px;
+    min-height: 250px; /* Adjust height as needed */
+}
+
+.button-row {
+    margin-top: auto; /* Pushes to bottom */
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
