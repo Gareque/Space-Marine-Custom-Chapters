@@ -37,6 +37,44 @@ app.get("/new-chapter", (req, res) => {
     res.render("create-chapter.ejs");
 });
 
+// Routes for the founding chapters
+app.get("/dark-angels", (req, res) => {
+  res.render("founding-chapters/dark-angels.ejs");
+});
+
+app.get("/white-scars", (req, res) => {
+  res.render("founding-chapters/white-scars.ejs");
+});
+
+app.get("/space-wolves", (req, res) => {
+  res.render("founding-chapters/space-wolves.ejs");
+});
+
+app.get("/imperial-fists", (req, res) => {
+  res.render("founding-chapters/imperial-fists.ejs");
+});
+
+app.get("/blood-angels", (req, res) => {
+  res.render("founding-chapters/blood-angels.ejs");
+});
+
+app.get("/iron-hands", (req, res) => {
+  res.render("founding-chapters/iron-hands.ejs");
+});
+
+app.get("/ultramarines", (req, res) => {
+  res.render("founding-chapters/ultramarines.ejs");
+});
+
+app.get("/salamanders", (req, res) => {
+  res.render("founding-chapters/salamanders.ejs");
+});
+
+// Secret Route on clicking the Aquila
+app.get("/emperor", (req, res) => {
+  res.render("emperor.ejs");
+});
+
 app.post("/submit", (req, res) => {
     const newChapter = {
         chapterName: req.body.chapterName,
